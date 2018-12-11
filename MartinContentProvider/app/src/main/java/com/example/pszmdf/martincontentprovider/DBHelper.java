@@ -21,16 +21,16 @@ public class DBHelper extends SQLiteOpenHelper {
         // TODO Auto-generated method stub
         db.execSQL("CREATE TABLE people (" +
                 "_id INTEGER PRIMARY KEY AUTOINCREMENT ," +
-                "name VARCHAR(128) NOT NULL," +
-                "email VARCHAR(128) NOT NULL," +
-                "food VARCHAR(128) NOT NULL" +
+                "name TEXT NOT NULL," +
+                "email TEXT NOT NULL," +
+                "food TEXT NOT NULL" +
                 ");");
 
         db.execSQL("CREATE TABLE animals (" +
                 "_id INTEGER PRIMARY KEY AUTOINCREMENT ," +
-                "name VARCHAR(128) NOT NULL," +
-                "kind VARCHAR(128) NOT NULL," +
-                "food VARCHAR(128) NOT NULL" +
+                "name TEXT NOT NULL," +
+                "kind TEXT NOT NULL," +
+                "food TEXT NOT NULL" +
                 ");");
 
         db.execSQL("INSERT INTO people (name, email, food) VALUES ('martin', 'mdf@cs.nott.ac.uk', 'cheese');");
